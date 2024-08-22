@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation de Bancs de Poissons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="controls">
+        <label for="numFish">Nombre de Poissons: <span id="numFishValue">200</span></label>
+        <input type="range" id="numFish" min="50" max="500" value="200">
+
+        <label for="speed">Vitesse: <span id="speedValue">5</span></label>
+        <input type="range" id="speed" min="1" max="10" value="5">
+
+        <label for="wiggle">Wiggle: <span id="wiggleValue">0.1</span></label>
+        <input type="range" id="wiggle" min="0" max="1" step="0.01" value="0.1">
+
+        <label for="k">Nombre de Voisins (k): <span id="kValue">5</span></label>
+        <input type="range" id="k" min="1" max="10" value="5">
+
+        <label for="collisionRadius">Rayon de Collision: <span id="collisionRadiusValue">30</span></label>
+        <input type="range" id="collisionRadius" min="10" max="100" value="30">
+
+        <label for="alignmentRadius">Rayon d'Alignement: <span id="alignmentRadiusValue">100</span></label>
+        <input type="range" id="alignmentRadius" min="10" max="200" value="100">
+
+        <label for="attractionRadius">Rayon d'Attraction: <span id="attractionRadiusValue">150</span></label>
+        <input type="range" id="attractionRadius" min="10" max="300" value="150">
+
+        <label for="sharkRadius">Shark Repulsion Radius:</label>
+        <input type="range" id="sharkRadius" min="50" max="500" value="100">
+        <span id="sharkRadiusValue">100</span>
+
+
+        <button id="pauseButton">Pause</button>
+        <button id="resetButton">Réinitialiser</button>
+    </div>
+    <canvas id="simulationCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
